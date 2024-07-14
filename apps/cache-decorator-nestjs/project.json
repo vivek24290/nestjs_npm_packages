@@ -1,0 +1,24 @@
+{
+  "name": "cache-decorator-nestjs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/cache-decorator-nestjs/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "cache-decorator-nestjs:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "cache-decorator-nestjs:build:development"
+        },
+        "production": {
+          "buildTarget": "cache-decorator-nestjs:build:production"
+        }
+      }
+    }
+  }
+}
