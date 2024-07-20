@@ -1,10 +1,28 @@
 {
-  "name": "@nest-js/cache-decorator",
+  "name": "@nestjs-decorators/cache-decorator",
   "version": "1.0.1",
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "type": "commonjs",
   "main": "./src/index.js",
-  "typings": "./src/index.d.ts"
+  "typings": "./src/index.d.ts",
+  "description": "This library was generated with [Nx](https://nx.dev).",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivek24290/nestjs_npm_packages.git"
+  },
+  "keywords": [
+    "NESTJS-DECORATORS;",
+    "cache-decorator"
+  ],
+  "author": "Vivek Vishal Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivek24290/nestjs_npm_packages/issues"
+  },
+  "homepage": "https://github.com/vivek24290/nestjs_npm_packages#readme"
 }
