@@ -1,5 +1,5 @@
 {
-  "name": "@org/source",
+  "name": "@nest-js/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
@@ -9,6 +9,7 @@
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
+    "ioredis": "^5.4.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
     "tslib": "^2.3.0"
@@ -41,6 +42,11 @@
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.4.2",
-    "webpack-cli": "^5.1.4"
+    "verdaccio": "^5.0.4",
+    "webpack-cli": "^5.1.4",
+    "@nest-js/cache-decorator": "file:packages/nest-js-cache-decorator-1.0.1.tgz"
+  },
+  "nx": {
+    "includedScripts": []
   }
 }

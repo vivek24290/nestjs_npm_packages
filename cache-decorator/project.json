@@ -1,0 +1,33 @@
+{
+  "name": "cache-decorator",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "cache-decorator/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist\\{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/cache-decorator",
+        "tsConfig": "cache-decorator/tsconfig.lib.json",
+        "packageJson": "cache-decorator/package.json",
+        "main": "cache-decorator/src/index.ts",
+        "assets": ["cache-decorator/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist\\{projectRoot}"
+      }
+    }
+  }
+}
