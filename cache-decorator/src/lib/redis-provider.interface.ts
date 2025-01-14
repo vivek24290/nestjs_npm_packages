@@ -5,4 +5,5 @@ export interface RedisProviderOptions {
   port: number;
   password?: string;
   tls?: ConnectionOptions;
+  enableOfflineMode?: boolean;
 }
